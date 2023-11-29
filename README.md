@@ -10,7 +10,7 @@ This ToDo Application is built using React, providing users with the ability to 
 2. [Project Structure](#project-structure)
 3. [Design Choices](#design-choices)
 4. [Additional Features](#additional-features)
-5. [Screenshorts](#screenshorts)
+5. [Screenshots](#screenshots)
 
 ## Setup and Run
 
