@@ -1,0 +1,143 @@
+.edit-task-modal {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 30%;
+  min-width: 20rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-task-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.edit-task-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.edit-task-input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 300;
+  border: 2px solid #e8e8e8;
+  background-color: #fff;
+  color: #000;
+  font-family: inherit;
+  transition: all 200ms;
+}
+
+.edit-task-input::placeholder {
+  color: #ccc;
+}
+
+.edit-task-input:focus {
+  border: 2px solid darkgrey;
+}
+
+.edit-task-textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: #fff;
+  color: #000;
+  font-family: inherit;
+  resize: none;
+  border: 2px solid #e8e8e8;
+  transition: all 200ms;
+}
+
+.edit-task-textarea::placeholder {
+  color: #ccc;
+}
+
+.edit-task-textarea:focus {
+  border: 2px solid darkgrey;
+}
+
+.edit-task-select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: #fff;
+  color: #000;
+  font-family: inherit;
+  border: 2px solid #e8e8e8;
+  transition: all 200ms;
+}
+
+.edit-task-select option {
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: #fff;
+  color: #000;
+  font-family: inherit;
+}
+
+.edit-task-label {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-task-date {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+  font-size: 0.8rem;
+  font-family: inherit;
+  border: 2px solid #e8e8e8;
+  transition: all 200ms;
+}
+
+.edit-task-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: #fff;
+  color: #000;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-task-button:hover {
+  background-color: #ccc;
+}
+
+.edit-task-button:active {
+  transform: scale(0.95);
+}
+
+.edit-task-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

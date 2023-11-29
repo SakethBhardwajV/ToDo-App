@@ -1,0 +1,7 @@
+.container {
+  background-color: #f8f7f7;
+  height: 100vh;
+  border-radius: 0 0 1rem 1rem;
+  display: grid;
+  place-items: center;
+}

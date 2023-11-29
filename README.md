@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# ToDo Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This ToDo Application is built using React, providing users with the ability to add, edit, delete tasks, and mark tasks as completed. The application includes various components such as Task List, Add Task Form, and Edit Task Form, with a responsive design and local storage functionality for persistent data.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+1. [Setup and Run](#setup-and-run)
+2. [Project Structure](#project-structure)
+3. [Design Choices](#design-choices)
+4. [Additional Features](#additional-features)
+5. [Screenshorts](#screenshorts)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Setup and Run
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To run the project locally, follow these steps:
 
-### `npm test`
+1.  **Clone the repository:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```bash
+    git clone https://github.com/SakethBhardwajV/ToDo-App.git
+    ```
 
-### `npm run build`
+2.  **Navigate to the project directory:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    cd frontend
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3.  **Install Dependencies:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm install
+    ```
 
-### `npm run eject`
+4.  **Run the application:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm start
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    The application will be accessible at http://localhost:3000 in your web browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The project is organized as follows:
 
-## Learn More
+- **src/components:** Contains React components such as TaskList, AddTaskForm, EditTaskForm, and ViewTaskModal.
+- **src/styles** Includes CSS files for styling components.
+- **src/slices:** Contains Redux slices for state management.
+- **src/App.js:** Main entry point of the application.
+- **src/index.js:** React DOM rendering.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Design Choices
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **React Components:** Each major functionality is encapsulated within its own React component for better organization and maintainability..
+- **React Router:** Used React Router for navigation, allowing users to move between the task list, add task, and edit task pages seamlessly
+- **State Management:** Utilized React state within each component to manage their respective functionalities. Redux slices were used for global state management when necessary.
+- **LocalStorage:** Tasks are saved in the browser's local storage to ensure data persistence even after a page refresh.
+- **Styling:** Applied a responsive design using CSS, providing a visually appealing and user-friendly interface.
 
-### Code Splitting
+## Additional Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### View Task
 
-### Analyzing the Bundle Size
+A View Task modal has been implemented, allowing users to view detailed information about a specific task. This modal is triggered by clicking on a task name in the Task List.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Screenshots
 
-### Making a Progressive Web App
+![App Screenshot](https://i.imgur.com/Mz2L0z2.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+_Task List - Displays tasks with status and options to mark as completed or delete._
 
-### Advanced Configuration
+![App Screenshot](https://i.imgur.com/n6x628B.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+_Add Task Form - Allows users to add new tasks with a name, description, priority, and due date._
 
-### Deployment
+![App Screenshot](https://i.imgur.com/ulfesJW.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+_Edit Task Form - Enables users to edit the task name, description, and priority._
 
-### `npm run build` fails to minify
+![App Screenshot](https://i.imgur.com/wejTR2p.gif)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_Mark as Complete - Tasks can be marked as complete with a visual indication._
+
+![App Screenshot](https://i.imgur.com/7kmh2SP.gif)
+
+_Delete Task - Users can delete tasks, removing them from the list._
+
+![App Screenshot](https://i.imgur.com/AZkRAl1.png)
+
+_View Task - Detailed view of a specific task, including name, description, and priority._
